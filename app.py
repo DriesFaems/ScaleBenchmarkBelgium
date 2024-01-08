@@ -84,9 +84,9 @@ number_consistenthighgrowth_2018 = consistenthighgrowth2018.count(1)
 
 # input company name
 
-st.title("ESI Benchmarking Tool")
+st.title("ESI Benchmarking Tool Belgium")
 
-st.write("This tool allows to benchmark particular countries and/or industries in terms of scaling companies.")
+st.write("This tool allows to benchmark particular regions and/or industries in terms of scaling companies.")
 
 # generate in streamlit a dropdown menu with all the countries
 
@@ -164,7 +164,7 @@ if clicked:
     fig, ax = plt.subplots()
     x = [2018, 2019, 2020, 2021, 2022]
     y2 = [selectnumber_scaler_2018, selectnumber_scaler_2019, selectnumber_scaler_2020, selectnumber_scaler_2021, selectnumber_scaler_2022]
-    ax.plot(x, y2, label='Selected')
+    ax.plot(x, y2, label='Selected', color='orange')
     for i, txt in enumerate(y2):
         ax.annotate(f'{txt}', (x[i], y2[i]), textcoords="offset points", xytext=(0,2), ha='center')
     ax.set_xlabel('Year')
@@ -225,7 +225,7 @@ if clicked:
     fig, ax = plt.subplots()
     x = [2018, 2019, 2020, 2021, 2022]
     y2 = [selectnumber_highgrowth_2018, selectnumber_highgrowth_2019, selectnumber_highgrowth_2020, selectnumber_highgrowth_2021, selectnumber_highgrowth_2022]
-    ax.plot(x, y2, label='Selected')
+    ax.plot(x, y2, label='Selected', color='orange')
     
     for i, txt in enumerate(y2):
         ax.annotate(f'{txt}', (x[i], y2[i]), textcoords="offset points", xytext=(0,2), ha='center')
@@ -291,7 +291,7 @@ if clicked:
 
     x = [2018, 2019, 2020, 2021, 2022]
     y2 = [selectnumber_consistenthighgrowth_2018, selectnumber_consistenthighgrowth_2019, selectnumber_consistenthighgrowth_2020, selectnumber_consistenthighgrowth_2021, selectnumber_consistenthighgrowth_2022]
-    ax.plot(x, y2, label='Selected')
+    ax.plot(x, y2, label='Selected', color='orange')
     
     for i, txt in enumerate(y2):
         ax.annotate(f'{txt}', (x[i], y2[i]), textcoords="offset points", xytext=(0,2), ha='center')
